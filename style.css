@@ -1,0 +1,668 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+/* font-family:""; */
+}
+*::selection{
+    background-color: black;
+    color: #fff;
+}
+html,body{
+width: 100%;
+height: 100%;
+}
+body{
+    background-color: #f4f4f4;
+}
+.nav{
+    /* height: 120px; */
+    width: 100%;
+    /* background-color: burlywood; */
+    position: fixed;
+    z-index: 999;
+    padding: 18px;
+    display: flex;
+      align-items: flex-start;
+    justify-content: space-between;
+}
+.nav .nav2{
+    display: flex;
+      align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.nav2 .links a{
+    font-family: "helvetica";
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-weight: 100;
+    margin: 20px;
+}
+.links a:hover{
+    border-bottom: 1px solid #454444c0;
+}
+.icons{
+    padding: 10px 15px;
+    background-color: #f4f4f4;
+    color: black;
+    border-radius: 20px;
+
+}
+.nav2 .icons i{ 
+    font-size: 15px;
+    font-weight: 100;
+    margin: 20px;
+}
+
+.nav .svg1{
+    /* background-color: red; */
+    height: 83px;
+    overflow: hidden;
+
+}
+.nav .svg1 svg{
+   display: block;
+}
+
+.cursor{
+    height: 240px;
+    width: 240px;
+    background-color: rgb(248, 209, 152);
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%,-50%)scale(0);
+}
+
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: bisque; */
+    position: relative;
+    padding: 0 5vw;
+    padding-top: 38vh;   
+}
+.page1 h1{
+    text-transform: uppercase;
+    font-size: 15vw;
+    font-family: "futura";
+    line-height: 10vw;
+    letter-spacing: -10px;
+    bottom: 5.2%;
+    padding-bottom: 8vh;
+
+}
+.page1 span{
+    padding: 0 12vw;
+}
+.vdo-contant{
+    height: 100vh;
+    width: 100%;
+    /* background-color: gray; */
+    position: relative;
+}
+.vdo-contant video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/* .vdo-contant .play{
+    padding: 3vw  ;
+    background-color: black;
+    color: #fff;
+    font-size: 3vw;
+    position: fixed;
+   
+} */
+
+.page2{
+    height: 100vh;
+    width: 100%;
+    /* background-color: aquamarine; */
+    position: relative;
+    display: flex;
+      align-items: center;
+    justify-content: space-between;
+    padding: 2vw 1vw;
+
+}
+.page2 #elem{
+    height: 100%;
+    width: 32%;
+    /* background-color: rgb(198, 116, 10); */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+      align-items: center;
+    justify-content: center;
+}
+#elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale:1.3;
+}
+#elem .dates{
+    height: 50px;
+    width: 80%;
+    background-color: rgb(248, 209, 152);
+    border-radius: 15PX;
+    position: absolute;
+    z-index: 0;
+}
+#elem .dates .uperwala{
+    display: flex;
+      align-items: center;
+    justify-content: space-between;
+    top: 10px;
+    right:15px;
+    position: absolute;
+    width: 90%;
+    /* background-color: blue; */
+    /* color: #fff; */
+    font-family: "helvetica";
+}
+#elem .dates .uperwala h3{ 
+    font-size: 15px;
+    font-weight: 100;
+}
+#elem .dates1{
+    height: 40%;
+    width: 80%;
+    background-color: rgb(248, 209, 152);
+    position: absolute;
+    bottom: 74px;
+    border-radius: 15px;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    padding: 0 1vw;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#elem .dates1:hover{
+    opacity: 1;
+}
+#elem .dates1 .uperwala{
+    display: flex;
+      align-items: center;
+    justify-content: space-between;
+    top: 10px;
+    right:15px;
+    position: absolute;
+    width: 90%;
+    /* background-color: blue; */
+    /* color: #fff; */
+    font-family: "helvetica";
+}
+#elem .dates1 .uperwala h3{
+    
+    font-size: 15px;
+    font-weight: 100;
+}
+
+
+#elem .dates1 .can1{
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+      align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#elem .dates1 .can1 .img1{
+    width: 80%;
+    height: 60%;
+    /* background-color: blue; */
+    position: relative;
+}
+#elem .dates1 .can1 .img1 img{
+    position: absolute;
+    height: 90px;
+    bottom: 20px;
+}
+#elem .dates1 .can1 h6{
+    position: absolute;
+    bottom: 6px;
+    padding: 0 20px;
+    font-family: "helvetica";
+    text-align: center;
+    font-weight: 100;
+}
+/* ///////////// */
+
+#elem .dates1 .can2{
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+      align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#elem .dates1 .can2 .img2{
+    width: 80%;
+    height: 60%;
+    /* background-color: blue; */
+    position: relative;
+}
+#elem .dates1 .can2 .img2 img{
+    position: absolute;
+    height: 90px;
+    bottom: 20px;
+}
+#elem .dates1 .can2 h6{
+    position: absolute;
+    bottom: 6px;
+    padding: 0 20px;
+    font-family: "helvetica";
+    text-align: center;
+    font-weight: 100;
+}
+
+
+
+
+
+.page3{
+    min-height: 120vh;
+    width: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+      align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.page3 #child{
+    height:55vh ;
+    margin-bottom: 4vw;
+    width: 35vw;
+    /* background-color: red; */
+    /* border: 1px solid black; */
+    position: relative;
+    display: flex;
+      align-items: center;
+    /* justify-content: center; */
+}
+.page3 .child3 img{
+    position: absolute;
+    left: 50px;
+}
+.page3 .child4 img{
+    position: absolute;
+    left: 50px;
+}
+.page3 .nichewale{
+    /* background-color: blue; */
+    position: absolute;
+    left: 70px;
+    padding-left: 40px;
+}
+.page3 .child4 .nichewale {
+    /* background-color: blue; */
+    position: absolute;
+    left: 10px;
+    width: 400px;
+   
+}
+#child img{
+    position: absolute;
+    top: -40px;
+    height: 100%;
+}
+#child a{
+    position: absolute;
+    z-index: 999;
+    bottom: 1px;
+    display: flex;
+      align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    right:130px;
+    text-decoration: none;
+    font-family: "helvetica";
+    font-size: 15px;
+    color: black;
+}
+ 
+
+.page3 .peragraf{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 450px;
+    padding-top: 8vh;
+    display: flex;
+    justify-content: space-between;
+}
+.peragraf .leftside{
+    width: 60%;
+    /* background-color: red; */
+    padding: 2vh;
+    padding-left: 2vw;
+    font-family: "futura";
+}
+.leftside h1{
+    font-size: 4vw;
+    line-height: 50px;
+}
+.peragraf .rightside{
+    width: 40%;
+    /* background-color: blue; */
+   padding-top: 1vh;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+.rightside h3{
+    font-size: 15px;
+    font-family: "helvetica";
+    font-weight: 100 ;
+    width: 50%;
+    line-height: 22px;
+    margin-bottom: 4vh;
+
+}
+.rightside .btn{
+    width: 280px;
+}
+.btn button{
+    background-color: transparent;
+    border: none;
+   border-bottom: 1px solid #454444c0;
+   color: #454444c0;
+    padding: 4px 8px;
+    font-size: 11px;
+    font-weight:30;
+    gap: 80px;
+}
+.btn button:hover{
+    border: none;
+}
+
+
+.page4{
+    height: 100vh;
+    width: 100%;
+    /* background-color: blanchedalmond; */
+    position: relative;
+}
+.page4 .minitext{
+position: absolute;
+right: 30px;
+    width: 95%;
+    height:20px;
+    font-family: "helvetica";
+    /* background-color: red; */
+    color: black;
+    display: flex;
+      align-items: center;
+    justify-content: space-between;
+    margin-top: 5vw;
+    border-bottom: 1px solid black;
+}
+.minitext h6{
+    font-size: 12px;
+    font-weight: 100;
+}
+.page4 .bigtext {
+    display: flex;
+      align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 9vw;
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    /* background-color: red; */
+    top: 12vw;
+}
+.bigtext h1{
+    font-size: 5vw;
+    font-family: "helvetica";
+    font-weight:200px;
+}
+.page5{
+    height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    /* padding-top: 20%; */
+    font-family: "helvetica";
+    display: flex;
+      align-items: center;
+    justify-content: center;
+}
+.page5 .page5-text{
+    display: flex;
+      align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5vw;
+    width: 50%;
+    /* background-color: red; */
+}
+.page5 .page5-text button{
+    font-size: 20px;
+    padding: 1.8vw 6vw;
+    border-radius: 30px;
+    border: none;
+    background-color: black;
+    color: #ffffff;
+}
+.page5-text button:hover{
+    color: #ffffffc6;
+}
+
+.page5 .page5-text .text5{
+    /* background-color: blue; */
+    margin-top: 20px;
+    font-family: "helvetica";
+}
+.page5 .page5-text .text5 h5{
+    font-size: 20px;
+    font-weight: 20;
+}
+.page6{
+    width: 100%;
+    height: 100vh;
+    /* background-color: blue; */
+    display: flex;
+}
+.page6 .page6-text{
+    height: 100%;
+    width: 35%;
+    /* background-color: red; */
+    /* border: 1px solid black; */
+    font-family:"helvetica" ;
+    padding: 1.2vw 2vw;
+}
+.page6 .page6-text h1{
+    font-size: 1.8vw;
+    font-weight: 800;
+}
+.page6 .page6-text h6{
+    font-family:"helvetica" ;
+    font-size: 15px;
+    padding-right: 8vw;
+    margin-top: 3vw;
+    font-weight: 100;
+    line-height: 22px;
+}
+.page6 .page6-text button{
+    background-color: transparent;
+    border: none;
+   border-bottom: 1px solid #454444c0;
+   color: #454444c0;
+   letter-spacing: 3px;
+   margin-top: 3vw;
+    padding: 4px 8px;
+    font-size: 11px;
+    font-weight:30;
+    gap: 80px;
+}
+.page6 .page6-text button:hover{
+    border: none;
+}
+
+
+.page6 .page6-img{
+    height: 100%;
+    width: 75%;
+    /* background-color: orange; */
+    display: flex;
+      align-items: center;
+    justify-content: space-evenly;
+}
+.page6 .page6-img .img1{
+    height: 95%;
+    width: 45%;
+    /* background-color: aqua; */
+}
+.page6 .page6-img .img2{
+    height: 95%;
+    width: 45%;
+    /* background-color: rgb(255, 0, 136); */
+}
+
+.page7{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+}
+.page7 .page7-heading{
+    width: 100%;
+    /* background-color: blue; */
+    margin-top: 5vw;
+    display: flex;
+      align-items: center;
+    justify-content: space-between;
+    padding: 0 1vw;
+    border-bottom: 1px solid black;
+    
+}
+.page7 .page7-heading input{
+    display: none;
+    font-size: 3vw;
+    width: 980px;
+    border: none;
+    /* background-color: ; */
+}
+.page7 .page7-heading .ri-corner-down-left-line{
+    display: none;
+    font-size: 2vw;
+    font-weight: 50;
+}
+.page7 .page7-heading h1{
+    font-family:"helvetica" ;
+    font-size: 3vw;
+    font-weight: 800;
+
+}
+.page7 .page7-heading i{
+    font-size: 2vw;
+    font-weight: 50;
+}
+.page7 .midcan{
+    width: 100%;
+    height: 35%;
+    padding: 1vw 2vw;
+    /* background-color: red; */
+    display: flex;
+      align-items: center;
+    justify-content: space-between;
+    font-family: "helvetica";
+    font-size: 14px;
+    line-height: 1.5;
+}
+.page7 .midcan h4{
+    font-size: 12px;
+    line-height: 5;
+    color: #0e0e0e50;
+}
+.page7 .midcan a{
+    text-decoration: none;
+    color: black;
+}
+.page7 .midcan a:hover{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.469);
+}
+.page7 .midcan .leftcan{
+    display: flex;
+      align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+.page7 .midcan .rightcan{
+    display: flex;
+    align-items:end;
+  justify-content: center;
+  flex-direction:column;
+}
+.page7 .lastcan {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    /* background-color: blue; */
+    bottom: 0;
+    display: flex;
+      /* align-items: center; */
+    justify-content: center;
+    /* flex-direction: column; */
+}
+.page7 .lastcan .a-tags{
+    width: 50%;
+    height: 30px;
+    /* background-color: pink; */
+    margin-top: 60px;
+    display: flex;
+      align-items:center;
+    justify-content: center;
+    font-family: "helvetica";
+    gap: 40px;
+}
+.page7 .lastcan .a-tags a{
+    font-size: 11px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.594);
+}
+
+.page7 .lastcan2{
+    position: absolute;
+    width: 80%;
+    height: 160px;
+    padding: 0 10vw;
+    /* background-color: orange; */
+    bottom: 4vw;
+    display: flex;
+      align-items: center;
+    justify-content: center;
+    left:120px;
+    text-align: justify;
+    text-align: center;
+}
+.page7 .lastcan2 h6{
+    font-size: 12px;
+    font-weight: 100;
+    align-items: center;
+    font-family: "helvetica";
+    line-height: 1.6;
+}
+
+.page7 .pop{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    left: 97%;
+    top: 85%;
+    /* bottom: 300px; */
+    transform: translate(-50%,-50%);
+}
+
+
+
+
