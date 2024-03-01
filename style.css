@@ -80,21 +80,21 @@ body{
     width: 100%;
     /* background-color: bisque; */
     position: relative;
-    padding: 0 5vw;
-    padding-top: 38vh;   
+    padding: 0 4vw;
+    padding-top: 21.2vh;   
 }
 .page1 h1{
     text-transform: uppercase;
     font-size: 15vw;
     font-family: "futura";
-    line-height: 10vw;
-    letter-spacing: -10px;
+    line-height: 12vw;
+    letter-spacing: -8px;
     bottom: 5.2%;
-    padding-bottom: 8vh;
+    padding-bottom: 1vh;
 
 }
 .page1 span{
-    padding: 0 12vw;
+    padding: 0 6vw;
 }
 .vdo-contant{
     height: 100vh;
